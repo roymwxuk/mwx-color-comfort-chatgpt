@@ -1,0 +1,30 @@
+:root {
+  --mainBgColor: rgb(61, 57, 57) !important;
+  --userMsgBgColor: rgb(136, 83, 83) !important;
+  --codeBlockBg: rgb(55, 51, 51) !important;
+  --inputBlockBgColor: rgb(65, 60, 60) !important;
+}
+html.dark {
+  /* input block color */
+  --bg-primary: var(--inputBlockBgColor) !important;
+}
+
+.dark {
+  /* font color */
+  --text-primary: lightgrey !important;
+
+  --theme-user-msg-bg: var(--userMsgBgColor) !important;
+  /* code block color */
+  --bg-primary: var(--codeBlockBg) !important;
+
+  /* sidebar */
+  --sidebar-surface-primary: var(--mainBgColor) !important;
+}
+html.dark,
+html.dark body {
+  background-color: var(--mainBgColor) !important;
+}
+html.dark,
+html.dark :not(:where(.light, .light *)) {
+  --main-surface-primary: var(--mainBgColor) !important;
+}
