@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "MWX Color Comfort",
+  "version": "1.0.0",
+  "description": "Make ChatGPT more comfortable to use by changing the background color and other colors.",
+
+  "permissions": ["storage"],
+
+  "host_permissions": ["https://chatgpt.com/*"],
+
+  "action": {
+    "default_title": "Color Comfort",
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "css": ["content/content.css"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png",
+    "128": "icons/icon128.png"
+  }
+}
