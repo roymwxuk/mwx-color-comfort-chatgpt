@@ -1,8 +1,8 @@
 :root {
-  --mainBgColor: rgb(61, 57, 57) !important;
-  --userMsgBgColor: rgb(136, 83, 83) !important;
-  --codeBlockBg: rgb(55, 51, 51) !important;
-  --inputBlockBgColor: rgb(65, 60, 60) !important;
+  --mainBgColor: rgb(61, 57, 57);
+  --userMsgBgColor: rgb(136, 83, 83);
+  --codeBlockBg: rgb(55, 51, 51);
+  --inputBlockBgColor: rgb(65, 60, 60);
 }
 html.dark {
   /* input block color */

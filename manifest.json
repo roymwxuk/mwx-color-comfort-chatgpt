@@ -3,8 +3,18 @@
   "name": "MWX Color Comfort",
   "version": "1.0.0",
   "description": "Make ChatGPT more comfortable to use by changing the background color and other colors.",
-
+  "author": "roymwxuk (https://roymwxuk)",
   "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mwx-color-comfort-chatgpt@roymwxuk.uk",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
 
   "host_permissions": ["https://chatgpt.com/*"],
 
@@ -23,8 +33,9 @@
   ],
 
   "icons": {
-    "48": "icons/icon48.png",
-    "96": "icons/icon96.png",
-    "128": "icons/icon128.png"
+    "48": "icon/icon-48.png",
+    "64": "icon/icon-64.png",
+    "96": "icon/icon-96.png",
+    "128": "icon/icon-128.png"
   }
 }
