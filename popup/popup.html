@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<style>
+body {
+    width: 260px;
+    padding: 12px;
+    font-family: sans-serif;
+    background-color: #5c4646;
+    color: rgb(202, 189, 189);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+</style>
 </head>
+
 <body>
-    <h2>Color Comfort</h2>
+
+<h3>Color Comfort: ChatGPT</h3>
+
+<div class="row">
+    <label>Main BG</label>
+    <input id="mainBgColor" type="text" placeholder="#373333">
+</div>
+
+<div class="row">
+    <label>User Msg</label>
+    <input id="userMsgBgColor" type="text" placeholder="#373333">
+</div>
+
+<div class="row">
+    <label>Code Block</label>
+    <input id="codeBlockBg" type="text" placeholder="#373333">
+</div>
+
+<div class="row">
+    <label>Input BG</label>
+    <input id="inputBlockBgColor" type="text" placeholder="#373333">
+</div>
+
+<script src="popup.js"></script>
+
 </body>
 </html>
